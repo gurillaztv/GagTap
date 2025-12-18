@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GagTap - Die Witze-App</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: linear-gradient(135deg, #ec4899 0%, #f97316 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        h1 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        .tagline {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 2rem;
+        }
+        .description {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 3rem;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .app-store-btn {
+            display: inline-block;
+            background: white;
+            color: #1f2937;
+            padding: 16px 32px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .app-store-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+        .links {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s;
+        }
+        .links a:hover {
+            color: white;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .feature {
+            background: rgba(255,255,255,0.15);
+            padding: 16px 24px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 8px;
+        }
+        .feature-text {
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="icon.png" alt="GagTap" class="logo">
+        <h1>GagTap</h1>
+        <p class="tagline">Die beste Witze-App Deutschlands</p>
+        <p class="description">
+            Entdecke täglich neue Witze, lass sie dir vorlesen und teile die besten mit deinen Freunden.
+            Mit AutoJoke-Funktion und über 1000+ handverlesenen Witzen.
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                <div class="feature-text">AutoJoke<br>Vorlesen</div>
+            </div>
+            <div class="feature">
+                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                <div class="feature-text">Swipe<br>Erlebnis</div>
+            </div>
+            <div class="feature">
+                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
+                <div class="feature-text">Teilen &<br>Speichern</div>
+            </div>
+        </div>
+
+        <a href="https://apps.apple.com/app/gagtap" class="app-store-btn">
+            Im App Store laden
+        </a>
+
+        <div class="links">
+            <a href="datenschutz.html">Datenschutz</a>
+            <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="mailto:gurillaztv@googlemail.com">Kontakt</a>
+        </div>
+    </div>
+</body>
+</html>
