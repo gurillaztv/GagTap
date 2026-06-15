@@ -35,13 +35,17 @@
         .updated { color: #9ca3af; font-size: 0.875rem; margin-bottom: 2rem; }
         a { color: #ec4899; }
         .logo { width: 60px; height: 60px; border-radius: 12px; margin-bottom: 1rem; }
+        .highlight { background: #fef3c7; border: 1px solid #fbbf24; border-radius: 8px; padding: 12px 16px; margin: 1rem 0; }
+        .highlight p, .highlight li { color: #92400e; }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="icon.png" alt="GagTap" class="logo">
         <h1>Datenschutzerklärung</h1>
-        <p class="updated">Zuletzt aktualisiert: Dezember 2024</p>
+        <p class="updated">Zuletzt aktualisiert: Juni 2026</p>
+
+        <p>Diese Datenschutzerklärung informiert dich darüber, wie in der App „GagTap" personenbezogene Daten erhoben und verarbeitet werden und welche Rechte dir zustehen.</p>
 
         <h2>1. Verantwortlicher</h2>
         <p>
@@ -49,58 +53,110 @@
             Neurottstraße 6a<br>
             68775 Ketsch<br>
             Deutschland<br>
-            E-Mail: gurillaztv@googlemail.com
+            E-Mail: <a href="mailto:gurillaztv@googlemail.com">gurillaztv@googlemail.com</a>
         </p>
 
-        <h2>2. Welche Daten wir erheben</h2>
-        <p>GagTap erhebt und verarbeitet folgende Daten:</p>
+        <h2>2. Überblick: Welche Daten wir verarbeiten</h2>
         <ul>
-            <li><strong>Nutzungsdaten:</strong> Anonymisierte Statistiken zur App-Nutzung (z.B. welche Witze geliked werden)</li>
-            <li><strong>Geräte-Identifikatoren:</strong> Für die Anzeige personalisierter Werbung (nur mit deiner Zustimmung)</li>
-            <li><strong>Eingereichte Witze:</strong> Wenn du einen Witz einreichst, speichern wir den Inhalt und deinen Autorennamen</li>
+            <li><strong>Witz-Interaktionen:</strong> Likes/Dislikes von Witzen (ohne Personenbezug)</li>
+            <li><strong>Von dir eingereichte Witze:</strong> Inhalt (Setup &amp; Pointe) sowie – sofern angegeben – dein Autoren-/Instagram-Name</li>
+            <li><strong>Leaderboard-Daten:</strong> Anzeigename/Instagram-Handle und Like-Zahlen, sofern du der Veröffentlichung zustimmst (siehe Punkt 4)</li>
+            <li><strong>Meldungen:</strong> Bei der Meldung eines Witzes eine pseudonyme Geräte-Kennung zur Missbrauchsvermeidung</li>
+            <li><strong>Geräte-Identifikatoren:</strong> für Werbung – nur mit deiner ausdrücklichen Einwilligung (siehe Punkt 6)</li>
+            <li><strong>Push-Token:</strong> nur, wenn du Benachrichtigungen aktivierst (siehe Punkt 8)</li>
         </ul>
 
-        <h2>3. Zweck der Datenverarbeitung</h2>
+        <h2>3. Backend &amp; Hosting (Supabase)</h2>
+        <p>
+            Zur Bereitstellung der App-Inhalte (Witze, Einreichungen, Likes, Leaderboard) nutzen wir den
+            Dienst <strong>Supabase</strong>. Die Daten werden auf Servern innerhalb der Europäischen Union
+            (Region Frankfurt, Deutschland) gespeichert und verarbeitet. Supabase verarbeitet diese Daten als
+            Auftragsverarbeiter in unserem Auftrag.
+        </p>
+
+        <h2>4. Leaderboard &amp; öffentlich sichtbare Daten</h2>
+        <div class="highlight">
+            <p><strong>Wichtig:</strong> Wenn du beim Einreichen eines Witzes einen Instagram-Handle bzw. Autorennamen angibst, wird dieser <strong>öffentlich</strong> in der App und in der globalen Rangliste (Leaderboard) angezeigt – zusammen mit der Anzahl der erhaltenen Likes.</p>
+            <p>Diese Veröffentlichung erfolgt <strong>ausschließlich auf Grundlage deiner ausdrücklichen Einwilligung</strong>: Vor dem Hochladen musst du in der App aktiv bestätigen, dass dein Handle öffentlich erscheinen darf. Gibst du keinen Handle an, wird dein Beitrag anonym als „Community" geführt.</p>
+        </div>
+        <p>
+            Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen und die Entfernung
+            deines Handles bzw. deiner Beiträge verlangen – eine kurze E-Mail an uns genügt (siehe Punkt 11).
+        </p>
+
+        <h2>5. Zwecke und Rechtsgrundlagen</h2>
         <ul>
-            <li>Bereitstellung und Verbesserung der App-Funktionen</li>
-            <li>Anzeige von Werbung (Google AdMob)</li>
-            <li>Analyse der App-Nutzung zur Verbesserung des Angebots</li>
+            <li><strong>Bereitstellung der App-Funktionen</strong> (Witze laden, einreichen, liken, teilen) – Art. 6 Abs. 1 lit. b und f DSGVO (Nutzungsverhältnis / berechtigtes Interesse an einer funktionsfähigen App)</li>
+            <li><strong>Öffentliche Anzeige im Leaderboard</strong> – Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</li>
+            <li><strong>Personalisierte Werbung &amp; Tracking</strong> – Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</li>
+            <li><strong>Missbrauchs-/Spamvermeidung bei Meldungen</strong> – Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)</li>
         </ul>
 
-        <h2>4. Werbung (Google AdMob)</h2>
+        <h2>6. Werbung &amp; Tracking (Google AdMob)</h2>
         <p>
-            Wir nutzen Google AdMob für die Anzeige von Werbung. Google kann Cookies und Geräte-Identifikatoren
-            verwenden, um personalisierte Werbung anzuzeigen. Du kannst der personalisierten Werbung widersprechen,
-            indem du beim ersten App-Start die Tracking-Anfrage ablehnst.
+            Die kostenlose Version zeigt Werbung über <strong>Google AdMob</strong> an. Hierbei können
+            Geräte-Identifikatoren (z. B. die Werbe-ID) verarbeitet werden, um Werbung auszuliefern und
+            – sofern du zustimmst – zu personalisieren.
         </p>
-        <p>Mehr Informationen: <a href="https://policies.google.com/privacy">Google Datenschutzerklärung</a></p>
-
-        <h2>5. In-App-Käufe</h2>
         <p>
-            Für In-App-Käufe (Werbefrei-Option) werden Zahlungsinformationen ausschließlich von Apple verarbeitet.
-            Wir haben keinen Zugriff auf deine Zahlungsdaten.
+            Auf iOS fragen wir vor der Anzeige personalisierter Werbung über das Apple-Dialogfeld
+            („App Tracking Transparency") deine Einwilligung ab. Lehnst du ab, wird dir nur nicht
+            personalisierte Werbung gezeigt. Durch den In-App-Kauf „Werbefrei" entfällt die Werbung vollständig.
         </p>
+        <p>Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank">Google Datenschutzerklärung</a></p>
 
-        <h2>6. Lokale Datenspeicherung</h2>
+        <h2>7. In-App-Käufe</h2>
         <p>
-            Einstellungen wie Sprachgeschwindigkeit, ausgewählte Stimme und Kategoriepräferenzen werden
-            ausschließlich lokal auf deinem Gerät gespeichert.
+            Der einmalige Kauf „Werbefrei" wird ausschließlich über den Apple App Store abgewickelt.
+            Zahlungsdaten werden allein von Apple verarbeitet; wir erhalten keinen Zugriff auf deine
+            Zahlungsinformationen.
         </p>
 
-        <h2>7. Deine Rechte</h2>
-        <p>Du hast das Recht auf:</p>
+        <h2>8. Push-Benachrichtigungen</h2>
+        <p>
+            Du kannst optional eine tägliche Witz-Benachrichtigung aktivieren. Dafür wird ein
+            Push-Token deines Geräts verarbeitet. Du kannst Benachrichtigungen jederzeit in den
+            App- oder Systemeinstellungen wieder deaktivieren.
+        </p>
+
+        <h2>9. Foto- und Medienzugriff</h2>
+        <p>
+            Im Story-Editor kannst du eigene Bilder als Hintergrund auswählen und erstellte Witz-Bilder
+            in deiner Fotogalerie speichern. Der Zugriff erfolgt nur nach deiner Freigabe und ausschließlich
+            lokal auf deinem Gerät – diese Bilder werden nicht an uns übertragen.
+        </p>
+
+        <h2>10. Lokale Datenspeicherung</h2>
+        <p>
+            Einstellungen wie Sprechgeschwindigkeit, ausgewählte Stimme, Musik-, Haptik- und
+            Kategoriepräferenzen sowie Favoriten werden ausschließlich lokal auf deinem Gerät gespeichert.
+        </p>
+
+        <h2>11. Deine Rechte</h2>
+        <p>Dir stehen nach der DSGVO insbesondere folgende Rechte zu:</p>
         <ul>
-            <li>Auskunft über deine gespeicherten Daten</li>
-            <li>Berichtigung unrichtiger Daten</li>
-            <li>Löschung deiner Daten</li>
-            <li>Widerspruch gegen die Datenverarbeitung</li>
+            <li>Auskunft über deine gespeicherten Daten (Art. 15)</li>
+            <li>Berichtigung unrichtiger Daten (Art. 16)</li>
+            <li>Löschung deiner Daten (Art. 17)</li>
+            <li>Einschränkung der Verarbeitung (Art. 18)</li>
+            <li>Datenübertragbarkeit (Art. 20)</li>
+            <li>Widerspruch gegen die Verarbeitung (Art. 21)</li>
+            <li>Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art. 7 Abs. 3)</li>
+            <li>Beschwerde bei einer Aufsichtsbehörde (Art. 77)</li>
         </ul>
+        <p>Zur Ausübung deiner Rechte genügt eine E-Mail an: <a href="mailto:gurillaztv@googlemail.com">gurillaztv@googlemail.com</a></p>
 
-        <h2>8. Kontakt</h2>
-        <p>Bei Fragen zum Datenschutz erreichst du uns unter: <a href="mailto:gurillaztv@googlemail.com">gurillaztv@googlemail.com</a></p>
+        <h2>12. Kinder</h2>
+        <p>
+            Die App richtet sich nicht an Kinder unter 16 Jahren. Wir erheben nicht wissentlich
+            personenbezogene Daten von Kindern.
+        </p>
 
-        <h2>9. Änderungen</h2>
-        <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen. Die aktuelle Version findest du immer auf dieser Seite.</p>
+        <h2>13. Änderungen dieser Erklärung</h2>
+        <p>
+            Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen. Die jeweils aktuelle
+            Version findest du immer auf dieser Seite.
+        </p>
     </div>
 </body>
 </html>
